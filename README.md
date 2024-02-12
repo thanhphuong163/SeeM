@@ -17,9 +17,10 @@ pip install -r requirements.txt
 ## Preprocess Datasets
 
 - The `heart` dataset is taken from [UCI](https://archive.ics.uci.edu/ml/datasets/heart+disease).
-- Run recreate the `heart` dataset, just run `heart.py` in directory `src/datamodules`:
+- Run recreate the `heart` dataset, just run `heart.py` and `gen_syn_data.py` in directory `src/datamodules`:
 ```sh
 python heart.py
+python gen_syn_data.py
 ```
 
 ## Run Model
