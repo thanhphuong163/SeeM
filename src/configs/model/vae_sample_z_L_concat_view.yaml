@@ -1,0 +1,7 @@
+_target_: modules.vae_sample_z_L_concat_view.VAE
+in_szes: ${datamodule.in_szes}
+hidden_sz: 50
+enc_intermediate_sz: 50
+dec_intermediate_sz: 50
+L: 1
+alpha: 1.0

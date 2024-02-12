@@ -1,0 +1,12 @@
+run:
+  dir: ${dirs.output_dir}/hydra_outputs/run
+sweep:
+  dir: ${dirs.output_dir}/hydra_outputs/sweep
+  subdir: ${hydra.job.num}
+sweeper:
+  params:
+    datamodule.sample: range(1, 3)
+    # datamodule.anomaly_rate: 2,5,15,20
+    datamodule.batch_sz: 64
+    # model.latent_sz: 50,100
+    # model.dec_intermediate_sz: 10,50

@@ -1,0 +1,4 @@
+csvlogger:
+  _target_: pytorch_lightning.loggers.CSVLogger
+  save_dir: ${dirs.output_dir}/${name_run}/${datamodule.data_name}/sample-${datamodule.sample}/anomaly_rate-${datamodule.anomaly_rate}
+  # name: ${name_run}

@@ -1,0 +1,3 @@
+_target_: modules.pl_module.LitModel
+model: ${model}
+optimizer: ${optimizer}

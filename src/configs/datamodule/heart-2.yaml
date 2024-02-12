@@ -1,0 +1,9 @@
+_target_: datamodules.datamodule.DataModule
+data_dir: ${dirs.data_dir}
+data_name: heart-2
+sample: 1
+anomaly_rate: 5
+in_szes: [6, 7]
+n_views: 2
+batch_sz: 1024
+scaler: standard

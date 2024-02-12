@@ -1,0 +1,29 @@
+defaults:
+  - dirs: benchmark
+  - datamodule: heart-2
+  - model: vae
+  - optimizer: adam
+  - pl_module: default
+  - callbacks: default
+  - logger: wandb
+  - trainer: deploy
+  - hydra: default
+  - _self_
+
+# For wandb
+name_run: VAE_sample_z_L_concat_view_tanh_F
+project_name: DeepProbMuvAD
+
+# Set null for random number generators
+seed: null
+
+# Simply provide checkpoint path to resume training
+ckpt_path: null
+
+# Set false for skipping model training
+# This is for re-evaluating some old model
+train: true
+
+# Evaluate on test set, using best model weights achieved during training
+# Lightning chooses best weights based on the metric specified in checkpoint callback
+test: true

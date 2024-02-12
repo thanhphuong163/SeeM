@@ -1,0 +1,1 @@
+{"a_indices": [186, 36, 164, 80, 22], "b_indices": [53, 80, 109, 18, 57], "chosen_views": ["view_2", "view_1", "view_2", "view_2", "view_1"], "data_dir": "../../../raw_datasets/heart", "output_dir": "../../../ready_datasets/removed_stdscaler_10_threshold0.9_anomaly_datasets/heart-2/sample-9/anomaly_rate-2", "random_state": 753, "n_views": 2, "anomaly_rate": 2, "removed_rate": 10}

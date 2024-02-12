@@ -1,0 +1,10 @@
+run:
+  dir: ${dirs.output_dir}/hydra_outputs/run
+sweep:
+  dir: ${dirs.output_dir}/hydra_outputs/sweep
+  subdir: ${hydra.job.num}
+sweeper:
+  params:
+    datamodule.sample: range(1,11)
+    optimizer.lr: 1e-3
+    model.latent_sz: range(3,15)

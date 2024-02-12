@@ -1,0 +1,3 @@
+defaults:
+- model_summary
+- rich_progressbar

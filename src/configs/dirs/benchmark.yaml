@@ -1,0 +1,4 @@
+raw_data_dir: ../../raw_datasets
+data_dir: ../../ready_datasets
+output_dir: ../../logs/benchmark/${now:%Y-%m-%d}/${now:%H-%M-%S}
+report_dir: ../reports # For DVC reports
